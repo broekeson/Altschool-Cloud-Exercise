@@ -12,4 +12,4 @@ Solution:
 <br> - Install the net-tools package using the command "sudo apt-get install net-tools"
 <br> - Run the command "ifconfig" to get the IP address of the virtual machine.
 
-![ifconfig Output](Screenshot%202022-08-15%20152257.png)
+![ifconfig-Output](Screenshot%202022-08-15%20152257.png)
