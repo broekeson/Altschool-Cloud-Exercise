@@ -1,0 +1,38 @@
+---
+- name: Setup Web Server
+  hosts: all
+  remote_user: root
+
+  tasks:
+  - name: Install Apache Server
+    apt:
+     name: apache2
+     state: present
+ 
+  - name: Start apache
+    service:
+     name: apache2
+     state: started 
+
+  - name: Install net-tool
+    apt:
+     name: net-tools
+     state: present
+
+  - name: Install PHP
+    apt:
+     name: libapache2-mod-php
+     state: present
+
+  - name: Add sample file
+    copy:
+     content: <?php echo date("F d, Y h:i:s A e", time()); ?>
+     dest: /var/www/html/index.php
+
+  - name: Set Timezone
+    command: "timedatectl set-timezone Africa/Lagos"
+
+  - name: Remove index.html
+    file:
+     path: /var/www/html/index.html
+     state: absent
