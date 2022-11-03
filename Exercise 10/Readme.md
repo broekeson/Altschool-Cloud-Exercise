@@ -43,6 +43,11 @@ we need to calculate the number of 1's in the subnet mask. We can do this by sub
 ```
 32 - 29 = 3
 ```
+The number of hosts is: 2^3 = 8
+Minus Network IP = First Host & Last Host = Broadcast IP
+The number of useable hosts is: 8 - 2 = 6
+
+<br> Formula: 2^(32 - subnet) - 2
 ```
 (2^3 - 2 = 6 usable hosts) 
 ```
@@ -66,7 +71,7 @@ The range of IP addresses is:
 ```
 
 - Calculate the Broadcast IP:
-The Broadcast IP is the Network IP + the number of hosts + 1.
+The Broadcast IP is the Network IP + the number of useable hosts + 1.
 ```
 The Network IP: 193.16.20.32 + 6 + 1 = 193.16.20.39
 ```
