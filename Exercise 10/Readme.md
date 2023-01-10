@@ -8,7 +8,7 @@ What is the Network IP, number of hosts, range of IP addresses and broadcast IP 
 
 Instruction: Submit all your answer as a markdown file in the folder for this exercise.
 <br>
-Ip address: 193.16.20.35
+Ip ddress: 193.16.20.35
 <br>Subnet: 29
 
 <br>Solution:
