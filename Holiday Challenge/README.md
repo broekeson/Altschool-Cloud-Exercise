@@ -56,3 +56,8 @@ Your EC2 instances must be launched in a private network.
 6. Create a custom domain name
  - Create a hosted zone in Route53
  - Create a record set for the ALB
+
+7. Create autoscaling group
+ - Create an autoscaling group for the private instances
+ - Create a launch configuration for the autoscaling group
+ - Create a scaling policy for the autoscaling group

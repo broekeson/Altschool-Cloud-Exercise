@@ -1,0 +1,6 @@
+[web-server]
+172.10.4.227
+172.10.4.86
+
+[web-server:vars]
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p ec2-user@44.202.74.222"'
